@@ -1,8 +1,12 @@
 import './App.css';
+import Button from './Components/Button/Button';
 
 function App() {
   return (
-<h1>I'm Here !</h1>
+  <>
+    I'm Here !
+    <Button />
+  </>
   );
 }
 
