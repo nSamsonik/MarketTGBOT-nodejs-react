@@ -9,13 +9,12 @@ const foods = getData();
 function App() {
   return (
     <>
-      I'm Here !
-      <Button title={'Добавить'} disable={false} type={'add'}/>
-      <Button title={'Удалить'} disable={false} type={'remove'}/>
-      <Button title={'Проверка'} disable={false} type={'checkout'}/>
-    {foods.map(food => {
-      return <Card food={food} key={food.id}/> 
-    })}
+      <h1 className='heading'>Сделай заказ:</h1>
+    <div className='cards__container'>
+      {foods.map(food => {
+        return <Card food={food} key={food.id}/> 
+      })}
+    </div>
     </>
   );
 }
