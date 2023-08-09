@@ -11,7 +11,7 @@ function Cart({cartItems, onCheckout}) {
       {cartItems.length === 0 ? "Нет товаров в корзине!": ""}
 
       <br /> <span className=''>Итоговая стоимость: ${totalPrice.toFixed(2)}</span>
-        <Button title={`${cartItems.length === 0 ? 'Выбери продукт! ': 'Купить!'}`} 
+        <Button title={`${cartItems.length === 0 ? 'Выбирай товар! ': 'Закупиться!'}`} 
         type={"checkout"}
         disable={cartItems.length === 0 ? true : false}
         onClick={onCheckout}

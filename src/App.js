@@ -47,13 +47,13 @@ function App() {
 
 
   const onCheckout = () => {
-    tele.MainButton.text = "Жмякай и погнали отмечать день пива!";
+    tele.MainButton.text = "Оплати и в бой!";
     tele.MainButton.show();
   }
 
   return (
     <>
-      <h1 className='heading'>Сделай заказ:</h1>
+      <h1 className='heading'>Добро пожаловать!</h1>
       <Cart cartItems={cartItems} onCheckout={onCheckout}/>
       <div className='cards__container'>
         {foods.map(food => {
