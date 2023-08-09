@@ -15,7 +15,6 @@ function App() {
 
   const [cartItems, setCartItems] = useState([])
 
-
   useEffect(() => {
     tele.ready();
   })
