@@ -47,7 +47,7 @@ function App() {
 
 
   const onCheckout = () => {
-    tele.MainButton.text = "Давай! Закинь еды в корзинку!";
+    tele.MainButton.text = "Жмякай и погнали отмечать день пива!";
     tele.MainButton.show();
   }
 
