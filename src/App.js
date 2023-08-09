@@ -44,13 +44,18 @@ function App() {
         )
       );
     }
-  }
+  };
 
+
+  const onCheckout = () => {
+    tele.MainButton.text = "Давай! Закинь еды в корзинку!";
+    tele.MainButton.show();
+  }
 
   return (
     <>
       <h1 className='heading'>Сделай заказ:</h1>
-      <Cart cartItems={cartItems} />
+      <Cart cartItems={cartItems} onCheckout={onCheckout}/>
       <div className='cards__container'>
         {foods.map(food => {
           return <Card food={food} key={food.id} onAdd={onAdd} onRemove={onRemove} /> 
